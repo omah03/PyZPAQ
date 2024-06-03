@@ -93,6 +93,3 @@ To customize the parent directory name used in the `run_compress_Docker.sh` scri
       -v "${LOGS_DIR}:/app/logs" \
       compressor python3 /app/compress.py /input /output MyProject
     ```
-
-## Results
-
