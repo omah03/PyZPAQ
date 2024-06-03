@@ -19,4 +19,4 @@ The project contains the following components:
 ## Installation
 - Clone the Repository
 - Build the Docker Image
-docker build -t compressor .
+''' docker build -t compressor . '''
