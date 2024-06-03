@@ -21,3 +21,9 @@ The project contains the following components:
 - Build the Docker Image
 `docker build -t compressor .`
 
+## Usage
+### Compressing Files
+
+To compress files, use the **run_compress_Docker.sh** script:
+
+```./run_comress_Docker.sh```
