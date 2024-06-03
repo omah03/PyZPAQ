@@ -1,9 +1,9 @@
 #!/bin/bash
 
-ORIGINAL_DIR="/media/dc-04-vol03/HBR/storage/P24001_Test"
-DECOMPRESSED_DIR="/media/dc-04-vol03/omar/input"
-APP_DIR="/media/dc-04-vol03/omar" 
-LOGS_DIR="/media/dc-04-vol03/omar/logs" 
+ORIGINAL_DIR=""
+DECOMPRESSED_DIR=""
+APP_DIR="" 
+LOGS_DIR="" 
 
 mkdir -p "${LOGS_DIR}"
 
