@@ -52,30 +52,24 @@ To compress files, use the **run_compare_Docker.sh** script:
 ```
 ## How to Customize Directory Paths in Shell Scripts
 
-Follow these steps to modify the `INPUT_DIR`, `OUTPUT_DIR`, `APP_DIR`, and `LOGS_DIR` in your shell scripts:
+Modify the `INPUT_DIR`, `OUTPUT_DIR`, `APP_DIR`, and `LOGS_DIR` in your shell scripts to match your setup:
 
-- **Open your shell script**: Open the script you want to adjust (e.g., `run_compress_Docker.sh`, `run_decompress_Docker.sh`, `run_compare_Docker.sh`).
+### Edit `INPUT_DIR`
+Locate the line with `INPUT_DIR=` and change it to your source files' directory.
+- **Example**: `INPUT_DIR="/path/to/your/input"`
 
-- **Edit `INPUT_DIR`**:
-  - Find the line starting with `INPUT_DIR=`.
-  - Replace the existing path with your desired input directory path.
-  - **Example**: `INPUT_DIR="/new/path/to/input"`
+### Edit `OUTPUT_DIR`
+Change `OUTPUT_DIR=` to where you want the output to go.
+- **Example**: `OUTPUT_DIR="/path/to/your/output"`
 
-- **Edit `OUTPUT_DIR`**:
-  - Locate the `OUTPUT_DIR=` line.
-  - Change the path to your preferred output directory.
-  - **Example**: `OUTPUT_DIR="/new/path/to/output"`
+### Edit `APP_DIR`
+If your Python scripts are not in a subdirectory but directly under a specific folder, set `APP_DIR` to that folder.
+- **Purpose**: Ensure this directory contains all necessary Python scripts.
+- **Example**: If your scripts are in `/home/user/myproject`, set `APP_DIR="/home/user/myproject"`.
 
-- **Edit `APP_DIR`**:
-  - Search for `APP_DIR=`.
-  - Update the path to where your application scripts are stored.
-  - **Example**: `APP_DIR="/new/path/to/app"`
-
-- **Edit `LOGS_DIR`**:
-  - Find the `LOGS_DIR=` line.
-  - Update to the directory where you want to save log files.
-  - **Example**: `LOGS_DIR="/new/path/to/logs"`
-
+### Edit `LOGS_DIR`
+Adjust `LOGS_DIR=` to where you want logs to be saved.
+- **Example**: `LOGS_DIR="/path/to/your/logs"`
 
 ## Specific customization for  `run_compress_Docker.sh`
 
