@@ -18,6 +18,10 @@ The project contains the following components:
 
 ## Installation
 - Clone the Repository
+ ``` python
+  git clone <repository-url>
+
+```
 - Build the Docker Image
 `docker build -t compressor .`
 
@@ -27,7 +31,44 @@ The project contains the following components:
 To compress files, use the **run_compress_Docker.sh** script:
 
 ``` python
-./run_comress_Docker.sh
+./run_compress_Docker.sh
+```
+
+### Decompressing Files
+
+To compress files, use the **run_decompress_Docker.sh** script:
+
+``` python
+./run_decompress_Docker.sh
+```
+
+### Compressing Files
+
+To compress files, use the **run_compare_Docker.sh** script:
+
+``` python
+./run_compare_Docker.sh
+```
+
+## Customizing the Parent Directory Name in Shell Scripts
+
+To customize the parent directory name used in the `run_compress_Docker.sh` script, follow these steps:
+
+- **Open the `run_compress_Docker.sh` script**
+
+- **Modify the Parent Directory Name**:
+  - Locate the last argument in the Docker run command: `P24001_Test`.
+  - Replace `P24001_Test` with your preferred parent directory name that reflects where you want to save compressed files underneath the output directory.
+
+  - **Example**: If you want to change it to `MyProject`, the command would look like this:
+    ```bash
+    docker run --rm \
+      -v "${INPUT_DIR}:/input:ro" \
+      -v "${OUTPUT_DIR}:/output" \
+      -v "${APP_DIR}:/app" \
+      -v "${LOGS_DIR}:/app/logs" \
+      compressor python3 /app/compress.py /input /output MyProject
+    ```
 
 
-ds
+
