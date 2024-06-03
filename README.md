@@ -11,3 +11,12 @@ The project contains the following components:
 - byte_compare.py: Compares two directories of files byte-by-byte.
 - Dockerfile: Sets up the Python environment and ZPAQ.
 - Shell scripts: Facilitate running the Docker containers with appropriate mounts and parameters.
+
+## Prerequisites
+- Docker
+- Access to a Unix-like operating system (Linux, macOS)
+
+## Installation
+- Clone the Repository
+- Build the Docker Image
+docker build -t compressor .
