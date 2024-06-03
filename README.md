@@ -23,7 +23,8 @@ The project contains the following components:
 
 ```
 - Build the Docker Image
-`docker build -t compressor .`
+```bash
+docker build -t compressor .```
 
 ## Usage
 ### Compressing Files
