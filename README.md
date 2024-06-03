@@ -42,7 +42,7 @@ To compress files, use the **run_decompress_Docker.sh** script:
 ./run_decompress_Docker.sh
 ```
 **NOTE:
-Decompressing automatically creates a folder called "input" and saved all decompressed files underneath it.**
+Decompressing automatically creates a folder called "input" and saved all decompressed files underneath it, while maintaining the folder hierarchy.**
 ### Compressing Files
 
 To compress files, use the **run_compare_Docker.sh** script:
