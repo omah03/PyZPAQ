@@ -19,6 +19,10 @@ logging.basicConfig(
 )
 
 def decompress_file(input_file, output_dir, index, total):
+    output_file = Path(output_dir) / input_file.stem
+    if output_file.exists():
+        logging.info(f"Skipping {input_file} as it is already decompressed.")
+        return
     try:
         command = ["zpaq", "x", str(input_file), "-to", str(output_dir)]
         subprocess.run(command, check=True)
