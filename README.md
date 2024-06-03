@@ -50,8 +50,34 @@ To compress files, use the **run_compare_Docker.sh** script:
 ``` python
 ./run_compare_Docker.sh
 ```
+## How to Customize Directory Paths in Shell Scripts
 
-## Customizing the Parent Directory Name in Shell Scripts
+Follow these steps to modify the `INPUT_DIR`, `OUTPUT_DIR`, `APP_DIR`, and `LOGS_DIR` in your shell scripts:
+
+- **Open your shell script**: Open the script you want to adjust (e.g., `run_compress_Docker.sh`, `run_decompress_Docker.sh`, `run_compare_Docker.sh`).
+
+- **Edit `INPUT_DIR`**:
+  - Find the line starting with `INPUT_DIR=`.
+  - Replace the existing path with your desired input directory path.
+  - **Example**: `INPUT_DIR="/new/path/to/input"`
+
+- **Edit `OUTPUT_DIR`**:
+  - Locate the `OUTPUT_DIR=` line.
+  - Change the path to your preferred output directory.
+  - **Example**: `OUTPUT_DIR="/new/path/to/output"`
+
+- **Edit `APP_DIR`**:
+  - Search for `APP_DIR=`.
+  - Update the path to where your application scripts are stored.
+  - **Example**: `APP_DIR="/new/path/to/app"`
+
+- **Edit `LOGS_DIR`**:
+  - Find the `LOGS_DIR=` line.
+  - Update to the directory where you want to save log files.
+  - **Example**: `LOGS_DIR="/new/path/to/logs"`
+
+
+## Specific customization for  `run_compress_Docker.sh`
 
 To customize the parent directory name used in the `run_compress_Docker.sh` script, follow these steps:
 
@@ -70,6 +96,5 @@ To customize the parent directory name used in the `run_compress_Docker.sh` scri
       -v "${LOGS_DIR}:/app/logs" \
       compressor python3 /app/compress.py /input /output MyProject
     ```
-
 
 
