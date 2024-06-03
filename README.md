@@ -10,7 +10,8 @@ The project contains the following components:
 - decompress.py: Decompresses ZPAQ archives.
 - byte_compare.py: Compares two directories of files byte-by-byte.
 - Dockerfile: Sets up the Python environment and ZPAQ.
-- Shell scripts: Facilitate running the Docker containers with appropriate mounts and parameters.
+- Shell scripts: Facilitate running the Docker containers with appropriate mounts and parameters.\
+- Uses maximum compression level 5. 
 
 ## Prerequisites
 - Docker
