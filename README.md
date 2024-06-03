@@ -27,4 +27,7 @@ The project contains the following components:
 To compress files, use the **run_compress_Docker.sh** script:
 
 ``` python
-./run_comress_Docker.sh```
+./run_comress_Docker.sh
+
+
+ds
