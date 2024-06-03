@@ -1,9 +1,9 @@
 #!/bin/bash
 
-INPUT_DIR="/media/dc-04-vol03/HBR/storage/P24001_Test" 
-OUTPUT_DIR="/media/dc-04-vol03/omar"
-APP_DIR="/media/dc-04-vol03/omar"
-LOGS_DIR="/media/dc-04-vol03/omar/logs"
+INPUT_DIR="" 
+OUTPUT_DIR=""
+APP_DIR=""
+LOGS_DIR=""
 
 mkdir -p "${LOGS_DIR}"
 
