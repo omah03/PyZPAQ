@@ -6,8 +6,8 @@ This project provides a suite of tools for compressing, decompressing, and compa
 ## Overview
 The project contains the following components:
 
-compress.py: Compresses files using ZPAQ.
-decompress.py: Decompresses ZPAQ archives.
-byte_compare.py: Compares two directories of files byte-by-byte.
-Dockerfile: Sets up the Python environment and ZPAQ.
-Shell scripts: Facilitate running the Docker containers with appropriate mounts and parameters.
+- compress.py: Compresses files using ZPAQ.
+- decompress.py: Decompresses ZPAQ archives.
+- byte_compare.py: Compares two directories of files byte-by-byte.
+- Dockerfile: Sets up the Python environment and ZPAQ.
+- Shell scripts: Facilitate running the Docker containers with appropriate mounts and parameters.
