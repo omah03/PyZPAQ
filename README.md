@@ -41,7 +41,8 @@ To compress files, use the **run_decompress_Docker.sh** script:
 ``` python
 ./run_decompress_Docker.sh
 ```
-
+**NOTE:
+Decompressing automatically creates a folder called "input" and saved all decompressed files underneath it.**
 ### Compressing Files
 
 To compress files, use the **run_compare_Docker.sh** script:
