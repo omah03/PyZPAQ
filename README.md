@@ -19,7 +19,7 @@ The project contains the following components:
 ## Installation
 - Clone the Repository
  ``` python
-  git clone <repository-url>
+  git clone https://github.com/omah03/PyZPAQ
 
 ```
 - Build the Docker Image
